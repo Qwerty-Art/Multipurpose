@@ -1,0 +1,8 @@
+node_modules/
+/dist/
+/.git/
+/**/_backstage
+/**/package-lock.json
+/**/Thumbs.db
+/**/*.DS_Store
+MoGo_FREE_Template_by_Laaqiq.psd
