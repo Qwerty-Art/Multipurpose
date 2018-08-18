@@ -145,3 +145,59 @@ h1,h2,h3,h4,h5,h6
 	background-size: contain
 	background-position: center
 	font-size: 0
+
+.middle-line__wrapper
+	display: flex
+	width: 100%
+	justify-content: space-around
+	align-items: center
+
+.header__logo
+	flex-grow: .2
+
+.header__menu-list,
+.header__pictogram
+	display: flex
+	justify-content: space-around	
+	margin: 0
+	padding: 0
+	list-style: none
+	a 
+		color: $c-f-1
+		text-transform: uppercase
+		text-decoration: none
+		font-weight: bold
+		&:hover
+			color: $c-f-3
+
+.header__menu-list
+	flex-grow: .5
+	li 
+		position: relative
+		&:hover:before
+			content: ''
+			display: block
+			width: 10px
+			height: 1px
+			background-color: $c-f-3
+			position: absolute
+			top: 0
+			left: 0
+
+.header__pictogram
+	flex-grow: .1
+	a 
+		font-size: 0
+		background-repeat: no-repeat
+		background-position: center
+		display: block
+		width: 20px
+		height: 20px
+	li	
+		&:first-of-type a
+			background-image: url('../img/svg/basket.svg')
+		&:last-of-type a
+			background-image: url('../img/svg/search.svg')
+
+
+//Footer
