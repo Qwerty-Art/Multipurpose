@@ -4,39 +4,42 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Document</title>
   </head>
   <body></body>
 </html>
 <header>
-  <header__top-line>
-    <div class="container"> 
+  <div class="header__top-line">
+    <div class="container flex-mod">
       <div class="top-line__l-col">
-        <ul class="header__lang-list">
-          <li>English</li>
-          <li>Русский</li>
-        </ul>
-        <div class="top-line__tel"><a href="tel:+440875369208">+440875369208</a></div>
-        <div class="htop-line__mail"><a href="mailto:info@info.info">info@info.info</a></div>
+        <div class="l-col__wrapper">
+          <ul class="header__lang-list">
+            <li>English</li>
+            <li>Русский</li>
+          </ul>
+          <div class="top-line__tel"><a href="tel:+440875369208">+440875369208</a></div>
+          <div class="htop-line__mail"><a href="mailto:info@info.info">info@info.info</a></div>
+        </div>
       </div>
       <div class="top-line__r-col">
-        <div class="top-line__login"><a href="#">Sign in</a><b>/</b><a href="#">Register</a></div>
+        <div class="r-col__wrapper">
+          <div class="top-line__login"><a href="#">Sign in</a><b>/</b><a href="#">Register</a></div>
+          <div class="top-line__items">
+            <p class="top-line__items-text">Wishlist:</p><strong>0 items</strong>
+          </div>
+          <ul class="top-line__social-list">
+            <li><a class="social-item soc-fb" href="http://">facebook</a></li>
+            <li><a class="social-item soc-tw" href="http://">twitter</a></li>
+            <li><a class="social-item soc-t" href="http://">tumblr</a></li>
+            <li><a class="social-item soc-ln" href="http://">linkedin</a></li>
+            <li><a class="social-item soc-g" href="http://">google+</a></li>
+            <li><a class="social-item soc-rss" href="http://">rss</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="top-line__items">
-        <p class="top-line__items-text">Wishlist:</p><strong>0 items</strong>
-        <ul class="top-line__items-list"></ul>
-      </div>
-      <ul class="top-line__social-list">
-        <li><a href="http://">facebook</a></li>
-        <li><a href="http://">twiter</a></li>
-        <li><a href="http://">tell</a></li>
-        <li><a href="http://">instogram</a></li>
-        <li><a href="http://">google+</a></li>
-        <li><a href="http://">rss</a></li>
-      </ul>
     </div>
-  </header__top-line>
+  </div>
   <div class="container">
     <div class="header__logo"><a href="/">Exe</a></div>
     <ul class="header__menu-list">

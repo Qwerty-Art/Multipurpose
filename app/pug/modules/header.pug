@@ -1,36 +1,38 @@
 header
-	header__top-line
-		.container 
+	.header__top-line
+		.container.flex-mod
 			.top-line__l-col
-				ul.header__lang-list
-					li English
-					li Русский
-				.top-line__tel
-					a(href="tel:+440875369208") +440875369208
-				.htop-line__mail
-					a(href="mailto:info@info.info") info@info.info
+				.l-col__wrapper
+					ul.header__lang-list
+						li English
+						li Русский
+					.top-line__tel
+						a(href="tel:+440875369208") +440875369208
+					.htop-line__mail
+						a(href="mailto:info@info.info") info@info.info
 			.top-line__r-col
-				.top-line__login
-					a(href="#") Sign in
-					b /
-					a(href="#") Register
-			.top-line__items
-				p.top-line__items-text Wishlist:
-				strong 0 items
-				ul.top-line__items-list
-			ul.top-line__social-list
-				li
-					a(href="http://") facebook
-				li
-					a(href="http://") twiter
-				li
-					a(href="http://") tell
-				li
-					a(href="http://") instogram
-				li
-					a(href="http://") google+
-				li
-					a(href="http://") rss
+				.r-col__wrapper
+					.top-line__login
+						a(href="#") Sign in
+						b /
+						a(href="#") Register
+					.top-line__items
+						p.top-line__items-text Wishlist:
+						strong 0 items
+						//- ul.top-line__items-list
+					ul.top-line__social-list
+						li
+							a(href="http://" class="social-item soc-fb") facebook
+						li
+							a(href="http://" class="social-item soc-tw") twitter
+						li
+							a(href="http://" class="social-item soc-t") tumblr
+						li
+							a(href="http://" class="social-item soc-ln") linkedin
+						li
+							a(href="http://" class="social-item soc-g") google+
+						li
+							a(href="http://" class="social-item soc-rss") rss
 	.container
 		.header__logo
 			a(href="/") Exe
