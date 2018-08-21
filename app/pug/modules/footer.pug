@@ -1,11 +1,11 @@
 footer
 	.container
 		.footer__col
-			.about-block
-				.about-block__title About us
-				.about-block__text
+			.about-footer
+				.footer__title About us
+				.about-footer__text
 					|Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d
-					a.about-block__link Read More
+					a.about-bfooter__link Read More
 			form(action="#").subs-block
 				label(for="subs-email").subs-block__title Email Newsletters:
 				input(type="email", id="subs-email", name="subs", placeholder="Email Address")
@@ -14,8 +14,8 @@ footer
 					a.subs-block__privacy-link Privvacy Policy
 		.footer__col
 			.news-footer
-				.news-footer__title Latest News
-					-var news = [{number: '04', mounth: 'feb',comment: 26, text:'fsfdsgfdhgh.ghj,fff'}, {number: '28', mounth: 'jan',comment: 0, text:'fsfdsgfdhgh.ghj,fff'}, {number: '03', mounth: 'mar',comment: 2, text:'fsfdsgfdhgh.ghj,fff'}]
+				.footer__title Latest News
+					-var news = [{number: '04', mounth: 'feb',comment: 26, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'}, {number: '28', mounth: 'jan',comment: 0, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'}, {number: '03', mounth: 'mar',comment: 2, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'}]
 						each val in news
 							.news-footer__news-block
 								.news-footer__date-block
@@ -27,3 +27,20 @@ footer
 										span!=val.comment
 										span  comments
 		.footer__col
+			.footer__title Get in touch
+				.contact-footer
+					.contact-footer__row
+						.contact-footer__coll Address: 
+						.contact-footer__coll 795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia
+					.contact-footer__row
+						.contact-footer__coll Phone: 
+						.contact-footer__coll 
+							.contact-footer__tel
+								a(href="tel:+440875369208") +440875369208
+								span - Office
+							.contact-footer__tel
+								a(href="tel:+440875369214") +440875369214
+								span - Fax
+					.contact-footer__row
+						.contact-footer__coll Address: 
+						.contact-footer__coll 795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia
