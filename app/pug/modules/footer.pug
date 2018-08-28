@@ -1,46 +1,88 @@
 footer
-	.container
+	.container.flex-mod.flex-mod_footer-col
 		.footer__col
-			.about-footer
-				.footer__title About us
+			.about-footer.footer__col-mod
+				h3.footer__title About us
 				.about-footer__text
-					|Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d
-					a.about-bfooter__link Read More
-			form(action="#").subs-block
-				label(for="subs-email").subs-block__title Email Newsletters:
-				input(type="email", id="subs-email", name="subs", placeholder="Email Address")
-				label.subs-block__privacy
-					input(type="checkbox", name="privacy")
-					a.subs-block__privacy-link Privvacy Policy
+					|Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit
+				a.about-bfooter__link Read More
+				form(action="#").subs-block
+					label(for="subs-email").subs-block__title Email Newsletters:
+					input(type="email", id="subs-email", name="subs", 	placeholder="Email Address")
+					label.subs-block__privacy
+						input(type="checkbox", name="privacy")
+						a.subs-block__privacy-link Privvacy Policy
 		.footer__col
-			.news-footer
-				.footer__title Latest News
-					-var news = [{number: '04', mounth: 'feb',comment: 26, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'}, {number: '28', mounth: 'jan',comment: 0, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'}, {number: '03', mounth: 'mar',comment: 2, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'}]
-						each val in news
-							.news-footer__news-block
-								.news-footer__date-block
-									.news-footer__number!= val.number
-									.news-footer__month!= val.mounth
-								.news-footer__content-news
-									.news-footer__text-news!=val.text
-									.news-footer__coments
-										span!=val.comment
-										span  comments
+			.news-footer.footer__col-mod
+				h3.footer__title Latest News
+				-var news = [{number: '04', mounth: 'feb',comment: 26, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'}, {number: '28', mounth: 'jan',comment: 0, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'}, {number: '03', mounth: 'mar',comment: 2, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'}]
+					each val in news
+						.news-footer__news-block
+							.news-footer__date-block
+								.news-footer__number!= val.number
+								.news-footer__month!= val.mounth
+							.news-footer__content-news
+								.news-footer__text-news!=val.text
+								.news-footer__coments
+									span!=val.comment
+									span  comments
 		.footer__col
-			.footer__title Get in touch
-				.contact-footer
-					.contact-footer__row
-						.contact-footer__coll Address: 
-						.contact-footer__coll 795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia
-					.contact-footer__row
-						.contact-footer__coll Phone: 
-						.contact-footer__coll 
-							.contact-footer__tel
-								a(href="tel:+440875369208") +440875369208
-								span - Office
-							.contact-footer__tel
-								a(href="tel:+440875369214") +440875369214
-								span - Fax
-					.contact-footer__row
-						.contact-footer__coll Address: 
-						.contact-footer__coll 795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia
+			.contact-footer.footer__col-mod
+				h3.footer__title Get in touch
+				.contact-footer__row
+					.contact-footer__cell Address: 
+					.contact-footer__cell 795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia
+				.contact-footer__row
+					h4.contact-footer__cell Phone: 
+					.contact-footer__cell 
+						.contact-footer__tel
+							a(href="tel:+440875369208") +440875369208
+							span - Office
+						.contact-footer__tel
+							a(href="tel:+440875369214") +440875369214
+							span - Fax
+				.contact-footer__row
+					h4.contact-footer__cell Email: 
+					.contact-footer__cell
+						.contact-footer__email
+							a(href="malito:support@sitename.co") support@sitename.com
+						.contact-footer__email
+							a(href="mailto:info@sitename.com") info@sitename.com
+				.contact-footer__row
+					h4.contact-footer__cell Follow Us:: 
+					.contact-footer__cell
+						.contact-footer__social
+							ul.footer__social-list
+								li
+									a(href="http://" class="social-item soc-fb") facebook
+								li
+									a(href="http://" class="social-item soc-tw") twitter
+								li
+									a(href="http://" class="social-item soc-t") tumblr
+								li
+									a(href="http://" class="social-item soc-ln") linkedin
+								li
+									a(href="http://" class="social-item soc-g") google+
+								li
+									a(href="http://" class="social-item soc-rss") rss
+	.footer__bottom-line
+		.container.flex-mod
+			.copyright 
+				small &copy; © 2015 èxe, Design by ThemeFire
+			ul.footer__menu-list.flex-mod
+				li
+					a(href="") Home
+				li
+					a(href="") About us
+				li
+					a(href="") Page
+				li
+					a(href="") Features
+				li
+					a(href="") Portfolio
+				li
+					a(href="") Blog
+				li
+					a(href="") Shop
+				li
+					a(href="") Contacts

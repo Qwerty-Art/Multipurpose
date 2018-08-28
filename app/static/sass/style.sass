@@ -156,7 +156,8 @@ h1,h2,h3,h4,h5,h6
 	flex-grow: .2
 
 .header__menu-list,
-.header__pictogram
+.header__pictogram,
+.footer__menu-list
 	display: flex
 	justify-content: space-around	
 	margin: 0
@@ -170,7 +171,8 @@ h1,h2,h3,h4,h5,h6
 		&:hover
 			color: $c-f-3
 
-.header__menu-list
+.header__menu-list,
+.footer__menu-list
 	flex-grow: .5
 	li 
 		position: relative
@@ -201,3 +203,48 @@ h1,h2,h3,h4,h5,h6
 
 
 //Footer
+
+.flex-mod_footer-col
+	justify-content: space-around
+	align-items: stretch
+	overflow: hidden
+
+.footer__col
+	width:calc( ( 100% - 0px ) / 3 )
+	
+.footer__col-mod
+	padding-top: 60px
+	padding-left: 35px
+	padding-right: 35px
+	padding-bottom: 60px
+	height: 100%
+
+.footer__title 
+	color: #fff
+	font-size: 24px
+	text-transform: uppercase
+	position: relative
+	&::after
+		content: ''
+		display: block
+		width: 70px
+		height: 2px
+		margin-top: 25px	
+		background-color: $c-f-3
+
+.news-footer
+	background-color: #202020
+
+.about-footer__text,
+.news-footer__news-block,
+.contact-footer__row
+	color: $c-f-1
+
+.contact-footer
+	background-color: #1b1b1b
+
+.footer__bottom-line
+	padding: 25px 0
+	background-color: #111111
+	.flex-mod
+		justify-content: space-between

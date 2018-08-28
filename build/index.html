@@ -61,76 +61,107 @@
   </div>
 </header>
 <footer>
-  <div class="container">
+  <div class="container flex-mod flex-mod_footer-col">
     <div class="footer__col">
-      <div class="about-footer">
-        <div class="footer__title">About us</div>
-        <div class="about-footer__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d<a class="about-bfooter__link">Read More</a></div>
+      <div class="about-footer footer__col-mod">
+        <h3 class="footer__title">About us</h3>
+        <div class="about-footer__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit</div><a class="about-bfooter__link">Read More</a>
+        <form class="subs-block" action="#">
+          <label class="subs-block__title" for="subs-email">Email Newsletters:</label>
+          <input type="email" id="subs-email" name="subs" placeholder="Email Address"/>
+          <label class="subs-block__privacy">
+            <input type="checkbox" name="privacy"/><a class="subs-block__privacy-link">Privvacy Policy</a>
+          </label>
+        </form>
       </div>
-      <form class="subs-block" action="#">
-        <label class="subs-block__title" for="subs-email">Email Newsletters:</label>
-        <input type="email" id="subs-email" name="subs" placeholder="Email Address"/>
-        <label class="subs-block__privacy">
-          <input type="checkbox" name="privacy"/><a class="subs-block__privacy-link">Privvacy Policy</a>
-        </label>
-      </form>
     </div>
     <div class="footer__col">
-      <div class="news-footer">
-        <div class="footer__title">Latest News
-          <div class="news-footer__news-block">
-            <div class="news-footer__date-block">
-              <div class="news-footer__number">04</div>
-              <div class="news-footer__month">feb</div>
-            </div>
-            <div class="news-footer__content-news">
-              <div class="news-footer__text-news">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
-              <div class="news-footer__coments"><span>26</span><span> comments</span></div>
-            </div>
+      <div class="news-footer footer__col-mod">
+        <h3 class="footer__title">Latest News</h3>
+        <div class="news-footer__news-block">
+          <div class="news-footer__date-block">
+            <div class="news-footer__number">04</div>
+            <div class="news-footer__month">feb</div>
           </div>
-          <div class="news-footer__news-block">
-            <div class="news-footer__date-block">
-              <div class="news-footer__number">28</div>
-              <div class="news-footer__month">jan</div>
-            </div>
-            <div class="news-footer__content-news">
-              <div class="news-footer__text-news">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
-              <div class="news-footer__coments"><span>0</span><span> comments</span></div>
-            </div>
+          <div class="news-footer__content-news">
+            <div class="news-footer__text-news">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
+            <div class="news-footer__coments"><span>26</span><span> comments</span></div>
           </div>
-          <div class="news-footer__news-block">
-            <div class="news-footer__date-block">
-              <div class="news-footer__number">03</div>
-              <div class="news-footer__month">mar</div>
-            </div>
-            <div class="news-footer__content-news">
-              <div class="news-footer__text-news">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
-              <div class="news-footer__coments"><span>2</span><span> comments</span></div>
-            </div>
+        </div>
+        <div class="news-footer__news-block">
+          <div class="news-footer__date-block">
+            <div class="news-footer__number">28</div>
+            <div class="news-footer__month">jan</div>
+          </div>
+          <div class="news-footer__content-news">
+            <div class="news-footer__text-news">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
+            <div class="news-footer__coments"><span>0</span><span> comments</span></div>
+          </div>
+        </div>
+        <div class="news-footer__news-block">
+          <div class="news-footer__date-block">
+            <div class="news-footer__number">03</div>
+            <div class="news-footer__month">mar</div>
+          </div>
+          <div class="news-footer__content-news">
+            <div class="news-footer__text-news">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
+            <div class="news-footer__coments"><span>2</span><span> comments</span></div>
           </div>
         </div>
       </div>
     </div>
     <div class="footer__col">
-      <div class="footer__title">Get in touch
-        <div class="contact-footer">
-          <div class="contact-footer__row">
-            <div class="contact-footer__coll">Address: </div>
-            <div class="contact-footer__coll">795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia</div>
+      <div class="contact-footer footer__col-mod">
+        <h3 class="footer__title">Get in touch</h3>
+        <div class="contact-footer__row">
+          <div class="contact-footer__cell">Address: </div>
+          <div class="contact-footer__cell">795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia</div>
+        </div>
+        <div class="contact-footer__row">
+          <h4 class="contact-footer__cell">Phone: </h4>
+          <div class="contact-footer__cell"> 
+            <div class="contact-footer__tel"><a href="tel:+440875369208">+440875369208</a><span>- Office</span></div>
+            <div class="contact-footer__tel"><a href="tel:+440875369214">+440875369214</a><span>- Fax</span></div>
           </div>
-          <div class="contact-footer__row">
-            <div class="contact-footer__coll">Phone: </div>
-            <div class="contact-footer__coll"> 
-              <div class="contact-footer__tel"><a href="tel:+440875369208">+440875369208</a><span>- Office</span></div>
-              <div class="contact-footer__tel"><a href="tel:+440875369214">+440875369214</a><span>- Fax</span></div>
+        </div>
+        <div class="contact-footer__row">
+          <h4 class="contact-footer__cell">Email: </h4>
+          <div class="contact-footer__cell">
+            <div class="contact-footer__email"><a href="malito:support@sitename.co">support@sitename.com</a></div>
+            <div class="contact-footer__email"><a href="mailto:info@sitename.com">info@sitename.com</a></div>
+          </div>
+        </div>
+        <div class="contact-footer__row">
+          <h4 class="contact-footer__cell">Follow Us:: </h4>
+          <div class="contact-footer__cell">
+            <div class="contact-footer__social">
+              <ul class="footer__social-list">
+                <li><a class="social-item soc-fb" href="http://">facebook</a></li>
+                <li><a class="social-item soc-tw" href="http://">twitter</a></li>
+                <li><a class="social-item soc-t" href="http://">tumblr</a></li>
+                <li><a class="social-item soc-ln" href="http://">linkedin</a></li>
+                <li><a class="social-item soc-g" href="http://">google+</a></li>
+                <li><a class="social-item soc-rss" href="http://">rss</a></li>
+              </ul>
             </div>
-          </div>
-          <div class="contact-footer__row">
-            <div class="contact-footer__coll">Address: </div>
-            <div class="contact-footer__coll">795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia</div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="footer__bottom-line">
+    <div class="container flex-mod">
+      <div class="copyright"> <small>&copy; © 2015 èxe, Design by ThemeFire</small></div>
+      <ul class="footer__menu-list flex-mod">
+        <li><a href="">Home</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Page</a></li>
+        <li><a href="">Features</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">Contacts</a></li>
+      </ul>
     </div>
   </div>
 </footer>
