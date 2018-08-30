@@ -1,3 +1,53 @@
 include ../modules/head
 include ../modules/header
+
+//- Home content
+
+.slider
+	.nav-botton
+		.prev-botton
+		.next-botton
+		ul.nav-dots
+			li.sl-avtive
+
+	.container
+		.slide.slide-1
+			h2.slide__title Smart Moves 
+				i of <b>Successful</b> Business
+			p.slide__text Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+			.slide__bnt-block
+				a.slide__buy.slide__bnt_decor Buy This Now
+				a.slide__prev.slide__bnt_decor Live Preview
+
+.feature
+	.container.flex-mod
+		-var feature = [{img:'img/sheet.png', title:'Clean Design',  text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed di'}, {img:'img/star.png', title:'Branding', text:'Duis autem vel eum iriure dolor in hendrerit in vulputate velit'}, {img:'img/tabl.png',title:'Responsive', text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed di'}, {img:'img/gear.png', title:'Development', text:'Duis autem vel eum iriure dolor in hendrerit in vulputate velit'}]
+			each val in feature
+				.feature-cart
+					.feature-cart__img
+						img(src!=val.img  alt="")
+					.feature-cart__title
+						h3!=val.title
+					.feature-cart__text
+						p!=val.text
+				
+.portfolio
+	.container.flex-mod.flex-mod__portfolio
+		.descr-block
+			.descr-block__title See Our Recent Work
+			.descr-block__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Claritas est etiam processus dynamicus.
+		-var img = [{img: 'img/photo-1.jpg', link: '#', alt: 'Text'}, {img: 'img/photo-2.jpg', link: '#', alt: 'Text'}, {img: 'img/photo-3.jpg', alt: 'Text'}, {img: 'img/photo-4.jpg', link: '#', alt: 'Text'}]
+			each val in img 
+				.portfolio-cart
+					a.portfolio-cart__link(href!=val.link)
+						img(src!=val.img, alt!=val.alt)
+		.portfolio-other
+			.portfolio-other__title Claritas Est Processus
+			.portfolio-other__text Graphic Designer, Photoshop
+			.portfolio-other__link-block
+				a.portfolio-other__search(href="#")
+				a.portfolio-other__sync(href="#")
+				
+			
+			
 include ../modules/footer

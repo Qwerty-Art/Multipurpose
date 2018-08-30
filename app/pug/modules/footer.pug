@@ -7,17 +7,18 @@ footer
 					|Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dLorem ipsum dolor sit amet, consectetuer adipiscing elit
 				a.about-bfooter__link Read More
 				form(action="#").subs-block
-					label(for="subs-email").subs-block__title Email Newsletters:
-					input(type="email", id="subs-email", name="subs", 	placeholder="Email Address")
+					legend Email Newsletters:
+					label.subs-block__email
+						input(type="email", id="subs-email", name="subs", 	placeholder="Email Address")
 					label.subs-block__privacy
 						input(type="checkbox", name="privacy")
 						a.subs-block__privacy-link Privvacy Policy
 		.footer__col
 			.news-footer.footer__col-mod
 				h3.footer__title Latest News
-				-var news = [{number: '04', mounth: 'feb',comment: 26, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'}, {number: '28', mounth: 'jan',comment: 0, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'}, {number: '03', mounth: 'mar',comment: 2, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'}]
+				-var news = [{number: '04', mounth: 'feb',comment: 26, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.'}, {number: '28', mounth: 'jan',comment: 0, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. '}, {number: '03', mounth: 'mar',comment: 2, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.'}]
 					each val in news
-						.news-footer__news-block
+						.news-footer__news-block.flex-mod
 							.news-footer__date-block
 								.news-footer__number!= val.number
 								.news-footer__month!= val.mounth
@@ -49,7 +50,7 @@ footer
 						.contact-footer__email
 							a(href="mailto:info@sitename.com") info@sitename.com
 				.contact-footer__row
-					h4.contact-footer__cell Follow Us:: 
+					h4.contact-footer__cell Follow Us: 
 					.contact-footer__cell
 						.contact-footer__social
 							ul.footer__social-list
