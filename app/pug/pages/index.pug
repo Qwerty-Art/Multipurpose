@@ -32,22 +32,55 @@ include ../modules/header
 						p!=val.text
 				
 .portfolio
-	.container.flex-mod.flex-mod__portfolio
-		.descr-block
-			.descr-block__title See Our Recent Work
-			.descr-block__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Claritas est etiam processus dynamicus.
-		-var img = [{img: 'img/photo-1.jpg', link: '#', alt: 'Text'}, {img: 'img/photo-2.jpg', link: '#', alt: 'Text'}, {img: 'img/photo-3.jpg', alt: 'Text'}, {img: 'img/photo-4.jpg', link: '#', alt: 'Text'}]
-			each val in img 
-				.portfolio-cart
-					a.portfolio-cart__link(href!=val.link)
-						img(src!=val.img, alt!=val.alt)
-		.portfolio-other
-			.portfolio-other__title Claritas Est Processus
-			.portfolio-other__text Graphic Designer, Photoshop
-			.portfolio-other__link-block
-				a.portfolio-other__search(href="#")
-				a.portfolio-other__sync(href="#")
+	.container
+		.portfolio-wrapper.flex-mod.flex-mod__portfolio
+			.descr-block
+				.descr-block__title See Our Recent Work
+				.descr-block__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Claritas est etiam processus dynamicus.
+			-var img = [{img: 'img/photo-1.jpg', link: '#', alt: 'Text'}, {img: 'img/photo-2.jpg', link: '#', alt: 'Text'}, {img: 'img/photo-3.jpg', link: '#', alt: 'Text'}, {img: 'img/photo-4.jpg', link: '#', alt: 'Text'}]
+				each val in img 
+					.portfolio-cart
+						a.portfolio-cart__link(href!=val.link)
+							img(src!=val.img, alt!=val.alt)
+			.portfolio-other
+				.portfolio-other__title Claritas Est Processus
+				.portfolio-other__text Graphic Designer, Photoshop
+				.portfolio-other__link-block
+					a.portfolio-other__search(href="#")
+					a.portfolio-other__sync(href="#")
+		a.portfolio-link(href="#") View All Portfolio »
+
+.responsive
+	.container
+		.responsive-wrapper
+			.responsive__title Fully Responsive Design Ready
+			.responsive__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Claritas est etiam processus dynamicus.
+			ul.responsive__list
+				-var list = ['Claritas est etiam processus dynamicus.', 'Mirum est notare quam littera gothica, quam.', 'Mirum est notare quam littera gothica, quam.', 'Duis autem vel eum iriure dolor in hendrerit.', 'Typi non habent claritatem insitam.']
+				each val in list
+					li!=val
+			a.responsive__btn Buy This Now
+					
 				
-			
+
+					
+				
+				
+.clients
+	.container
+		h2.clients__title Our Happy Clients
+		p.clients__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Claritas est etiam processus dynamicus.
+		.clients__slider
+			.nav-botton
+				.prev-botton
+				.next-botton
+			.cliens__slider-container.flex-mod
+				-var slide = ['img/client-1.png', 'img/client-2.png', 'img/client-3.png', 'img/client-4.png', 'img/client-5.png']
+					each val in slide
+						.client__slide
+							img(src!=val)
+					
+				
+
 			
 include ../modules/footer

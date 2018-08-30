@@ -1,30 +1,7 @@
-				//- .news-footer__news-block
-				//- 	.news-footer__date-block
-				//- 		.news-footer__number 04
-				//- 		.news-footer__month Feb
-				//- 	.news-footer__content-news
-				//- 		.news-footer__text-news
-				//- 			|Claritas est etiam processus dynamicus, qui sequitur mutationem
-				//- 		.news-footer__coments
-				//- 			span 26
-				//- 			span comments
-
-				-var news = [
-					//- 		{
-					//- 			number: 04;
-					//- 			mounth: 'feb';
-					//- 			text: 'wsdfghjkjhnbgvcxdcvbnmnb';
-					//- 			numComm: 26
-					//- 		}
-					//- 	];
-					//- 	each val in news
-					//- 	.news-footer__news-block
-					//- 		.news-footer__date-block
-					//- 			.news-footer__number val.number
-					//- 			.news-footer__month val.mounth
-					//- 		.news-footer__content-news
-					//- 			.news-footer__text-news
-					//- 				val.text
-					//- 			.news-footer__coments
-					//- 				span val.nuComm
-					//- 				span comments
+	display: inline-block
+	vertical-align: top
+	padding: 16px 30px
+	border-radius: 4px
+	border: 2px solid #fff
+	color: #fff
+	text-transform: uppercase

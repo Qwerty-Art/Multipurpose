@@ -207,6 +207,40 @@ h1,h2,h3,h4,h5,h6
 .slider
 	position: relative
 
+.prev-botton,
+.next-botton
+	width: 30px
+	height: 30px
+	background-color: rgba(39, 39,39, .5)
+	border-radius: 5px
+	position: relative
+	&:hover
+		background-color: $c-f-3
+
+.prev-botton
+	&::before
+		content: "\2039"
+		position: absolute
+		top: 38%
+		left: 50%
+		transform: translate(-50%, -50%)
+		font-size: 40px
+		color: $c-f-1
+
+.next-botton
+	&::before
+		content: "\203A"
+		position: absolute
+		top: 38%
+		left: 50%
+		transform: translate(-50%, -50%)
+		font-size: 40px
+		color: $c-f-1
+
+.prev-botton:hover:before,
+.next-botton:hover:before
+	color: #fff
+
 .slide
 	height: 765px
 	padding-top: 15%
@@ -293,11 +327,14 @@ h1,h2,h3,h4,h5,h6
 .portfolio
 	padding: 75px 0
 
+.portfolio-wrapper
+	margin-bottom: 60px
+
 .flex-mod__portfolio
 	flex-wrap: wrap
 
 .descr-block
-	width: 300px
+	width: 302px
 	flex-shrink: 0
 
 .descr-block__title
@@ -322,13 +359,107 @@ h1,h2,h3,h4,h5,h6
 	text-transform: uppercase
 
 .portfolio-other
-	border: 3px solid $c-f-3
+	border: 5px solid $c-f-3
 	flex: 1 auto
+	padding-top: 35px
+	padding-left: 35px
+	background-image: url('../img/photo-5.jpg')
+	background-repeat: no-repeat
+	background-size: 120%
+	background-position: center
 	
 .portfolio-other__text
 	font-size: 12px
 	text-transform: uppercase
+	color: $c-f-4
+
+.portfolio-link
+	color: $c-f-3
+	text-decoration: none
+
+// Responsive
+
+.responsive
+	background-color: $c-f-5
+	padding-top: 75px
+	padding-bottom: 75px
+
+.responsive-wrapper
+	padding-left: 800px	
+
+.responsive__title
 	color: #fff
+	font-size: 30px
+	text-transform: uppercase
+	margin-bottom: 30px
+	&::before
+		content: ''
+		display: block
+		width: 70px
+		height: 1px
+		background-color: $c-f-4
+
+.responsive__text
+	color: $c-f-4	
+	font-size: 14px
+	margin-bottom: 30px
+
+.responsive__list
+	list-style: none
+	color: $c-f-1
+	font-size: 14px
+	margin-bottom: 50px
+	li 
+		position: relative
+		margin-bottom: 25px
+		&::before
+			content: '\00af'
+			color: $c-f-3
+			position: absolute
+			top: 7px
+			left: -25px
+
+.responsive__btn
+	display: inline-block
+	vertical-align: top
+	padding: 16px 30px
+	border-radius: 4px
+	color: #fff
+	background-color: $c-f-2
+	text-transform: uppercase
+
+// Clients
+
+.clients
+	padding-top: 76px
+	padding-bottom: 75px
+	background-color: $c-f-6
+
+.cliens__slider-container
+	justify-content: space-around
+
+.clients__title
+	font-size: 30px
+	text-transform: uppercase
+	color: #fff
+	position: relative
+	text-align: center
+	&::before
+		content: ''
+		display: block
+		width: 80px
+		height: 2px
+		background-color: $c-f-4
+		position: absolute
+		top: -15px
+		left: 50%
+		transform: translateX(-50%)
+
+.clients__text
+	color: $c-f-4
+	padding-left: 20%
+	padding-right: 20%
+	text-align: center
 
 //Footer
 
