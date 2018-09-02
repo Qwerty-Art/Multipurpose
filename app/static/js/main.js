@@ -2,14 +2,36 @@
 // Slider Top
 
 (function () {
-	var prev  = document.querySelector('.slider .prev-botton'),
+	let prev  = document.querySelector('.slider .prev-botton'),
 			next  = document.querySelector('.slider .next-botton'),
 			slide = document.querySelectorAll('.slider-wrapper .slide'),
 			i = 0;
+	
+	for (j = 0; j < slide.length; j++){
+		let dot = document.createElement('li'),
+			dots = document.querySelector('.slider .nav-dots');
+		dots.appendChild(dot)
+	}
+
+	let dot = document.querySelectorAll('.nav-dots')
+	console.log(dot);
+
+
+	$('.nav-dots li').click(function () {
+		let numberDot = $('.nav-dots li').index(this),
+			slide = $('.slider-wrapper .slide'),
+		index = numberDot;
+		slide.removeClass('shown');
+		slide[1].addClass('shown');
+		console.log(slide[index])
+
+	})
+
+
 
 	prev.onclick = function () {
 		console.log(slide[i]);
-		slide[i].classList.remove('shown');
+		$().classList.remove('shown');
 		i = i - 1;
 		if (i < 0) {
 			i = slide.length - 1;
