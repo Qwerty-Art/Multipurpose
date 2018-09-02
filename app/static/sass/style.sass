@@ -206,6 +206,17 @@ h1,h2,h3,h4,h5,h6
 
 .slider
 	position: relative
+	.nav-botton
+		position: absolute
+		top: 50%
+		width: 100%
+		.prev-botton
+			left: 0
+			position: absolute
+		.next-botton
+			right: 0
+			position: absolute
+
 
 .prev-botton,
 .next-botton
@@ -226,6 +237,7 @@ h1,h2,h3,h4,h5,h6
 		transform: translate(-50%, -50%)
 		font-size: 40px
 		color: $c-f-1
+		line-height: 1
 
 .next-botton
 	&::before
@@ -236,15 +248,23 @@ h1,h2,h3,h4,h5,h6
 		transform: translate(-50%, -50%)
 		font-size: 40px
 		color: $c-f-1
+		line-height: 1
 
 .prev-botton:hover:before,
 .next-botton:hover:before
 	color: #fff
 
+.slider-wrapper
+	width: 100%
+	height: 765px
+	position: relative
+
 .slide
 	height: 765px
 	padding-top: 15%
 	padding-left: 50%
+	position: absolute
+	opacity: 0
 	.slide__title
 		color: #fff
 		font-size: 70px
@@ -276,18 +296,25 @@ h1,h2,h3,h4,h5,h6
 	border: none
 	margin-right: 25px
 
+.slide.shown
+	opacity: 1
+	transition: 1.6s
+
 .nav-dots
 	list-style: none
+	position: absolute
+	bottom: 20px
+	left: 50%
+	z-index: 1
 	li 
 		display: inline-block
-		width: 5px
-		height: 5px
+		width: 8px
+		height: 8px
+		margin-right: 10px
 		right: 5px
 		border-radius: 50%
 		background-color: #fff
-		position: absolute
-		bottom: 20px
-		left: 50%
+		z-index: 1
 
 	.sl-avtive
 		background-color: $c-f-3
@@ -296,6 +323,12 @@ h1,h2,h3,h4,h5,h6
 	background-image: url('../img/bg-slide.jpg')
 	background-repeat: no-repeat
 	background-position: 40% 0
+
+.slide-2
+	background-image: url('../img/bg-slide-2.jpg')
+	background-size: cover
+	padding-left: 10px
+	padding-right: 60%
 
 // Feature
 
@@ -588,7 +621,6 @@ h1,h2,h3,h4,h5,h6
 	text-align: center
 	padding: 2px
 	margin-right: 20px
-	p2
 	.news-footer__number
 		font-size: 18px
 		font-weight: bold
