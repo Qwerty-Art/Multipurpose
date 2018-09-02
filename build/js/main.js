@@ -19,15 +19,14 @@
 
 	$('.nav-dots li').click(function () {
 		let numberDot = $('.nav-dots li').index(this),
-			slide = $('.slider-wrapper .slide'),
-		index = numberDot;
+				slide = $('.slider-wrapper .slide');
+
 		slide.removeClass('shown');
-		slide[1].addClass('shown');
-		console.log(slide[index])
+		slide.eq(numberDot).addClass('shown');
 
 	})
 
-
+	// Dots nav
 
 	prev.onclick = function () {
 		console.log(slide[i]);
@@ -38,6 +37,8 @@
 		};
 		slide[i].classList.add('shown')
 	}
+
+	// Btn Prev Next
 
 	next.onclick = function () {
 		console.log(slide[i]);
