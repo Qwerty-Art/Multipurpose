@@ -5,6 +5,21 @@
 	let prev = document.querySelector('.slider .prev-botton'),
 			next = document.querySelector('.slider .next-botton'),
 			slide = document.querySelectorAll('.slider-wrapper .slide');
+	//let autoPlay = setInterval(nextSlide, 2000);
+
+	// slide.onmouseover = function(e) {
+	// 	console.log(1)
+	// //	stopSlide(autoPlay)
+	// };
+
+	// // (function() {
+	// // 		let a = setInterval(nextSlide,1000);
+	// // 	// код выполняется автоматически
+	// //  })();
+
+	// // function stopSlide() {
+	// // 	clearInterval(autoPlay)
+	// // };
 	
 
 	// Dots nav
@@ -16,7 +31,7 @@
 	}
 
 	let dot = document.querySelectorAll('.nav-dots')
-	console.log(dot);
+	
 
 	$('.nav-dots li').click(function () {
 		let numberDot = $('.nav-dots li').index(this),
@@ -53,7 +68,6 @@
 
 	next.onclick = function () {	
 		let index = findEl();
-		console.log(slide[index]);
 		slide[index].classList.remove('shown');
 		index = index + 1;
 		if (index >= slide.length) {
@@ -61,4 +75,14 @@
 		}
 		slide[index].classList.add('shown');
 	}	
+
+	function nextSlide() {
+		let index = findEl();
+		slide[index].classList.remove('shown');
+		index = index + 1;
+		if (index >= slide.length) {
+			index = 0;
+		}
+		slide[index].classList.add('shown');
+	}
 })()
